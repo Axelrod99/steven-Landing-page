@@ -6,34 +6,34 @@ import mail from '../../assets/icons/mail.png'
 
 export default function index() {
   return (
-    <div>
-        <div className='flex mb-24'>
-            <div className='bg-[#0280FD08] flex w-full flex-col items-center mx-10'>
+    <div className=''>
+        <div className='flex mb-24 justify-center'>
+            <div className='bg-[#0280FD08] flex w-full flex-col items-center mx-28 rounded-lg'>
                 <div className='flex flex-col w-full mb-14 px-10 py-3'>
                     <p className='text-xl font-semibold'>Want to get in touch ?</p>
                     <p className='text-xl font-semibold'>Drop me a line!</p>
                 </div>
 
                 <div className='w-full flex flex-col'>
-                    <div className='flex gap-3 px-7'>
+                    <div className='flex sm:flex-row flex-col gap-10 px-7 mx-14'>
                         <div className='flex flex-col w-full'>
                             <p className='font-semibold'>Name</p>
-                            <input placeholder='Enter your name'></input>
+                            <input className='p-1' placeholder='Enter your name'></input>
                         </div>
 
                         <div className='flex flex-col w-full'>
                             <p className='font-semibold'>Email</p>
-                            <input placeholder='Enter your email'></input>
+                            <input className='p-1' placeholder='Enter your email'></input>
                         </div>
 
                     </div>
 
-                    <div className='flex flex-col my-6 px-7'>
+                    <div className='flex flex-col my-6 px-7 mx-14'>
                         <p className='flex justify-start font-semibold'>Message</p>
-                        <input className='h-40'></input>
+                        <textarea className='p-1'></textarea>
                     </div>
 
-                    <div className='py-5'><button className='bg-blue-500 rounded-md text-white p-1 px-8'>Submit</button></div>
+                    <div className='py-5 mx-20'><button className='bg-blue-500 rounded-md text-white p-1 px-8'>Submit</button></div>
                 </div>
             </div>
         </div>
